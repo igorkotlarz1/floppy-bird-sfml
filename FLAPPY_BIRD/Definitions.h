@@ -27,12 +27,15 @@ using namespace sf;
 #define PIPE_DISTANCE 200
 
 #define BIRD_SCALE 2.f //0.1f
-#define BRID_PATH_1 R"(Textures\bird_2\downflap.png)"
-#define BRID_PATH_2 R"(Textures\bird_2\midflap.png)"
-#define BRID_PATH_3 R"(Textures\bird_2\upflap.png)"
+#define BIRD_PATH_1 R"(Textures\bird_2\downflap.png)"
+#define BIRD_PATH_2 R"(Textures\bird_2\midflap.png)"
+#define BIRD_PATH_3 R"(Textures\bird_2\upflap.png)"
 
 #define PIPE_BOTTOM_PATH ""
 #define PIPE_TOP_PATH ""
+
+#define BG_PATH R"(Textures\backgrounds\piwko1.jpg)"
+#define GROUND_PATH R"(Textures\ground\base.png)"
 
 #define PLAY_PATH R"(Textures\buttons\play_normal.png)"
 #define PLAY_PATH_HOVER R"(Textures\buttons\play_pressed.png)"
@@ -55,9 +58,6 @@ using namespace sf;
 
 #define GAME_OVER_PATH R"(Textures\ui\gameover.png)"
 #define FLAPPY_PATH R"(Textures\ui\flappybird.png)"
-
-#define LOGIN_PATH R"(Textures\buttons\share.png)"
-#define REGISTER_PATH R"(Textures\buttons\ok.png)"
 
 #define FONT_SCORE R"(Fonts\font_score.ttf)"
 #define FONT_SCORE_2 R"(Fonts\Press_Start_2P\PressStart2P-Regular.ttf)"

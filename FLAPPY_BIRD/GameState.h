@@ -3,7 +3,7 @@
 
 enum class GameState 
 {
-    LOGIN = 0,
+    LOADING = 0,
     MENU,
     PLAYING,
     PAUSE,

@@ -24,6 +24,7 @@
 #include "GamePlayMenu.h"
 
 //#include "PathValidator.h"
+#include "TextureManager.h"
 
 class Game
 {
@@ -60,15 +61,14 @@ private:
 
 	Time pupSpawnTimer, pupSpawnInterval;
 	
-	//GUI
-	//Button startButton;
-
 	//Textury
+	TextureManager textureManager;
+
 	Texture backgroundTexture, groundTexture;
 	Sprite backgroundSprite, groundSprite;
 
 	//Tekst
-	Text scoreText;
+	Text scoreText, loadingText;
 	Font font;
 
 	//punkty
@@ -77,8 +77,11 @@ private:
 	//Metody inicjalizujace
 	void initWindow();
 	void initText();
-	void initTextures();
+	void loadTextures();
+	void initSprites();
 	void initVariables();
+
+	bool texturesLoaded();
 
 	//przechwytywanie zdazen
 	void pollEvents();

@@ -14,9 +14,9 @@ Bird::~Bird()
 void Bird::initTextures()
 {
 	Texture texture1, texture2, texture3;
-	texture1.loadFromFile(BRID_PATH_1);
-	texture2.loadFromFile(BRID_PATH_2);
-	texture3.loadFromFile(BRID_PATH_3);
+	texture1.loadFromFile(BIRD_PATH_1);
+	texture2.loadFromFile(BIRD_PATH_2);
+	texture3.loadFromFile(BIRD_PATH_3);
 
 	Textures.push_back(texture1);
 	Textures.push_back(texture2);

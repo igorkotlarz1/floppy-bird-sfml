@@ -1,28 +1,3 @@
-﻿  Bird.cpp
-  Button.cpp
-  FLAPPY_BIRD.cpp
-  Game.cpp
-C:\Users\igor\Desktop\FLAPPY_BIRD\Game.cpp(287,20): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
-  GameOverMenu.cpp
-  GamePlayMenu.cpp
-  Invincibility.cpp
-  MainMenu.cpp
-  MovingPipe.cpp
-  PathValidator.cpp
-  PauseMenu.cpp
-  Pipe.cpp
-C:\Users\igor\Desktop\FLAPPY_BIRD\Pipe.cpp(35,11): warning C4244: "argument": konwersja z "const int" do "const float", możliwa utrata danych
-  PipeFactory.cpp
-C:\Users\igor\Desktop\FLAPPY_BIRD\PipeFactory.cpp(44,18): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\igor\Desktop\FLAPPY_BIRD\PipeFactory.cpp(46,15): warning C4018: ">=": niezgodność typu ze znakiem/bez znaku
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory(3434,56): warning C4244: "argument": konwersja z "float" do "const int", możliwa utrata danych
-  (kompilowanie pliku źródłowego „PipeFactory.cpp”)
-  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory(3434,56):
-  kontekst tworzenia wystąpienia szablonu (najpierw najstarszy) to
-  	C:\Users\igor\Desktop\FLAPPY_BIRD\PipeFactory.cpp(49,21):
-  	zobacz odwołanie do kompilowanego tworzenia wystąpienia „std::unique_ptr<MovingPipe,std::default_delete<MovingPipe>> std::make_unique<MovingPipe,float&,float&,float&,float&,float&,0>(float &,float &,float &,float &,float &)” funkcji szablon
-  
-  PowerUp.cpp
-  UIButton.cpp
-  Generowanie kodu...
-  FLAPPY_BIRD.vcxproj -> C:\Users\igor\Desktop\FLAPPY_BIRD\Debug\FLAPPY_BIRD.exe
+﻿  Game.cpp
+C:\Users\igor\Desktop\PROJEKT_PK4\FLAPPY_BIRD\Game.cpp(304,20): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+  FLAPPY_BIRD.vcxproj -> C:\Users\igor\Desktop\PROJEKT_PK4\FLAPPY_BIRD\Debug\FLAPPY_BIRD.exe

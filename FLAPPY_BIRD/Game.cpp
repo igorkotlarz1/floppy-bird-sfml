@@ -10,30 +10,86 @@ void Game::initWindow()
     window->setFramerateLimit(90);
 }
 
-void Game::initTextures()
+void Game::loadTextures()
 {
+    /*
     //Inicjalizacja tekstur tla  
-    if (!backgroundTexture.loadFromFile(R"(Textures\backgrounds\piwko1.jpg)"))
+    if (!backgroundTexture.loadFromFile(BG_PATH))
         std::cout << "ERROR: failed to load background file in Game::initTextures()" << std::endl;
 
-    backgroundSprite.setTexture(backgroundTexture);
+    //Inicjalizacja tekstur podloza
+    if (!groundTexture.loadFromFile(GROUND_PATH))
+        std::cout << "ERROR: failed to load ground file in Game::initTextures()" << std::endl;
+     
+    */
+    textureManager.loadFromFile("BACKGROUND", BG_PATH); 
+    textureManager.loadFromFile("GROUND", GROUND_PATH); 
+
+    textureManager.loadFromFile("BIRD1", BIRD_PATH_1); 
+    textureManager.loadFromFile("BIRD2", BIRD_PATH_2); 
+    textureManager.loadFromFile("BIRD3", BIRD_PATH_3); 
+
+    textureManager.loadFromFile("PIPE_BOTTOM", PIPE_BOTTOM_PATH); 
+    textureManager.loadFromFile("PIPE_TOP", PIPE_TOP_PATH); 
+
+    textureManager.loadFromFile("PLAY", PLAY_PATH); 
+    textureManager.loadFromFile("PLAY_HV", PLAY_PATH_HOVER); 
+
+    textureManager.loadFromFile("PAUSE", PAUSE_PATH);
+    textureManager.loadFromFile("PAUSE", PAUSE_PATH_HOVER);
+
+    textureManager.loadFromFile("RESUME", RESUME_PATH);
+    textureManager.loadFromFile("RESUME_HV", RESUME_PATH_HOVER);
+
+    textureManager.loadFromFile("MENU", MENU_PATH);
+    textureManager.loadFromFile("MENU_HV", MENU_PATH_HOVER);
+
+    textureManager.loadFromFile("OK", OK_PATH);
+    textureManager.loadFromFile("OK_HV", OK_PATH_HOVER);
+
+    textureManager.loadFromFile("INVINC", INVINC_PATH);
+    
+
+
+
+   
+    while (!textureManager.isLoaded("BACKGROUND") || !textureManager.isLoaded("GROUND")) {
+        sleep(milliseconds(10));
+    }
+
+   // backgroundSprite.setTexture(backgroundTexture);
+   // groundTexture.setRepeated(true);
+   // groundSprite.setTexture(groundTexture);
+
+    /*
+    textureManager.getTexture("GROUND").setRepeated(true);
+
+    groundSprite.setTexture(textureManager.getTexture("GROUND"));
+    groundSprite.setTextureRect(IntRect(0, 0, WIN_WIDTH, GROUND_HEIGHT));
+    groundSprite.setPosition(0.f, WIN_HEIGHT - GROUND_HEIGHT);
+
+    backgroundSprite.setTexture(textureManager.getTexture("BACKGROUND"));
     backgroundSprite.setScale(BG_SCALE_W, BG_SCALE_H);
     backgroundSprite.setPosition(0.0f, 0.0f);
+    */
+
     
-    //Inicjalizacja tekstur podloza
-    if (!groundTexture.loadFromFile(R"(Textures\ground\base.png)"))
-        std::cout << "ERROR: failed to load ground file in Game::initTextures()" << std::endl;
+}
 
-    groundTexture.setRepeated(true);
-    groundSprite.setTexture(groundTexture);
-
+void Game::initSprites()
+{
+    groundSprite.setTexture(textureManager.getTexture("GROUND"));
     groundSprite.setTextureRect(IntRect(0, 0, WIN_WIDTH, GROUND_HEIGHT));
-    groundSprite.setPosition(0.f, WIN_HEIGHT-GROUND_HEIGHT);
+    groundSprite.setPosition(0.f, WIN_HEIGHT - GROUND_HEIGHT);
+
+    backgroundSprite.setTexture(textureManager.getTexture("BACKGROUND"));
+    backgroundSprite.setScale(BG_SCALE_W, BG_SCALE_H);
+    backgroundSprite.setPosition(0.0f, 0.0f);
 }
 
 void Game::initVariables()
 {
-    currentMenu = &mainMenu;
+    //currentMenu = &mainMenu;
 
     pipeSpawnTimer = Time::Zero;
     pipeSpawnInterval = seconds(3.f);
@@ -44,10 +100,27 @@ void Game::initVariables()
     difficulty = Difficulty::EASY;
 }
 
+bool Game::texturesLoaded()
+{
+    return false;
+}
+
 void Game::initText()
 {
     if (!font.loadFromFile(FONT_SCORE))
         std::cout << "Unable to load SCORE FONT!" << std::endl;
+
+    loadingText.setFont(font);
+    loadingText.setString("Loading...");
+    loadingText.setCharacterSize(80);
+    loadingText.setFillColor(Color::White);
+    loadingText.setOutlineColor(Color::Black);
+    loadingText.setOutlineThickness(4.f);
+
+    //Centrowanie napisu Loading...
+    auto textBounds = loadingText.getLocalBounds();
+    loadingText.setOrigin(textBounds.left + textBounds.width / 2.f, textBounds.top + textBounds.height / 2.f);
+    loadingText.setPosition(WIN_WIDTH / 2.f, WIN_HEIGHT / 2.f);
 
     scoreText.setFont(font);
     scoreText.setCharacterSize(72);
@@ -61,13 +134,15 @@ void Game::initText()
     scoreText.setOrigin(scoreBounds.left + scoreBounds.width / 2.f, scoreBounds.top + scoreBounds.height / 2.f);
     scoreText.setPosition(WIN_WIDTH / 2.f, 60.f);
 
+
+
 }
 
-Game::Game(): window(nullptr), score(0), currentState(GameState::MENU)
+Game::Game(): window(nullptr), score(0), currentState(GameState::LOADING), textureManager() //pipeFactory(textureManager), bird(textureManager)
 {
 	initWindow();
-    initTextures();    
     initText();
+    loadTextures();    
     initVariables();     
 }
 
@@ -198,6 +273,14 @@ void Game::update(Time& dt)
     currentMenu->update(window);
     switch (currentState) 
     {
+    case GameState::LOADING :
+        if (texturesLoaded())
+        {
+            initSprites();
+            currentState = GameState::MENU;
+        }
+        break;
+
     case GameState::MENU :
         if (mainMenu.start())
         {
@@ -205,6 +288,7 @@ void Game::update(Time& dt)
             restartGame();
         }
         break;
+
     case GameState::PLAYING :
         spawnPipes(dt);
         spawnPowerUp(dt);
@@ -220,6 +304,7 @@ void Game::update(Time& dt)
             bird.freeze();
         }
         break;
+
     case GameState::PAUSE :
         if (pauseMenu.resume())
         {
@@ -231,6 +316,7 @@ void Game::update(Time& dt)
             currentState = GameState::MENU;           
         }
         break;
+
     case GameState::GAME_OVER :
         if (gameOver.restart())
         {
@@ -308,10 +394,15 @@ void Game::renderPowerUp()
 void Game::render()
 {
     window->clear();
-    window->draw(backgroundSprite);   
+
+    if(currentState != GameState::LOADING)
+        window->draw(backgroundSprite);   
 
     switch (currentState)
     {
+    case GameState::LOADING:
+        window->draw(loadingText);
+        break;
     case GameState::MENU:
         break;
     case GameState::PLAYING:
@@ -332,7 +423,8 @@ void Game::render()
         renderScore();
         break;
     }  
-    window->draw(groundSprite);
+    if (currentState != GameState::LOADING)
+        window->draw(groundSprite);
     //kazdy stan dokonuje renderu
     currentMenu->render(window);
     window->display();
