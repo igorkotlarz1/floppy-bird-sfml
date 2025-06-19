@@ -4,6 +4,10 @@ UIButton::UIButton() : currentState(ButtonState::IDLE), pressedLastFrame(true)
 {
 }
 
+UIButton::UIButton(TextureManager& manager)
+{
+}
+
 void UIButton::initButton(const std::string& idlePath, const std::string& hoverPath, const Vector2f& pos)
 {
 	if (!idleTexture.loadFromFile(idlePath) || !hoverTexture.loadFromFile(hoverPath))

@@ -16,8 +16,6 @@ void MainMenu::initTextures()
 	auto bounds = flappyBirdSprite.getGlobalBounds();
 
 	startButton.initButton(PLAY_PATH, PLAY_PATH_HOVER,{ 0.f, 0.f }); 
-	scoreButton.initButton(SCORE_PATH, SCORE_PATH_HOVER,{ 0.f, 0.f });
-
 }
 
 void MainMenu::adjustButtons()

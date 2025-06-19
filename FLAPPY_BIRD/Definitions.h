@@ -31,8 +31,8 @@ using namespace sf;
 #define BIRD_PATH_2 R"(Textures\bird_2\midflap.png)"
 #define BIRD_PATH_3 R"(Textures\bird_2\upflap.png)"
 
-#define PIPE_BOTTOM_PATH ""
-#define PIPE_TOP_PATH ""
+#define PIPE_BOTTOM_PATH R"(Textures\pipes\pipe_up.png)"
+#define PIPE_TOP_PATH R"(Textures\pipes\pipe_up.png)"
 
 #define BG_PATH R"(Textures\backgrounds\piwko1.jpg)"
 #define GROUND_PATH R"(Textures\ground\base.png)"
@@ -50,8 +50,8 @@ using namespace sf;
 #define MENU_PATH R"(Textures\buttons\menu.png)"
 #define MENU_PATH_HOVER R"(Textures\buttons\menu_hover.png)"
 
-#define SCORE_PATH R"(Textures\buttons\score_normal.png)"
-#define SCORE_PATH_HOVER R"(Textures\buttons\score_pressed.png)"
+//#define SCORE_PATH R"(Textures\buttons\score_normal.png)"
+//#define SCORE_PATH_HOVER R"(Textures\buttons\score_pressed.png)"
 
 #define OK_PATH R"(Textures\buttons\ok.png)"
 #define OK_PATH_HOVER R"(Textures\buttons\ok_hover.png)"
@@ -67,19 +67,6 @@ using namespace sf;
 
 #define PUP_SCALE 3.f
 
-
-
-
-
-
-/*#define BACKGROUND_PATH
-#define PLAY_BUTTON_PATH
-#define TITLE_PATH
-#define BIRD_TEXTURES 3
-#define PIPE_TEXTURES 2
-#define BIRD_PATH
-#define PIPE_PATH
-*/
 
 #endif 
 

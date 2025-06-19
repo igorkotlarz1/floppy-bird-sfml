@@ -36,7 +36,7 @@ void Game::loadTextures()
     textureManager.loadFromFile("PLAY_HV", PLAY_PATH_HOVER); 
 
     textureManager.loadFromFile("PAUSE", PAUSE_PATH);
-    textureManager.loadFromFile("PAUSE", PAUSE_PATH_HOVER);
+    textureManager.loadFromFile("PAUSE_HV", PAUSE_PATH_HOVER);
 
     textureManager.loadFromFile("RESUME", RESUME_PATH);
     textureManager.loadFromFile("RESUME_HV", RESUME_PATH_HOVER);
@@ -49,21 +49,13 @@ void Game::loadTextures()
 
     textureManager.loadFromFile("INVINC", INVINC_PATH);
     
+    textureManager.loadFromFile("GAMEOVER", GAME_OVER_PATH);
+    textureManager.loadFromFile("FLAPPYBIRD", FLAPPY_PATH);
 
-
-
-   
-    while (!textureManager.isLoaded("BACKGROUND") || !textureManager.isLoaded("GROUND")) {
-        sleep(milliseconds(10));
-    }
-
-   // backgroundSprite.setTexture(backgroundTexture);
-   // groundTexture.setRepeated(true);
-   // groundSprite.setTexture(groundTexture);
-
-    /*
-    textureManager.getTexture("GROUND").setRepeated(true);
-
+    /*   
+    backgroundSprite.setTexture(backgroundTexture);
+    groundTexture.setRepeated(true);
+    groundSprite.setTexture(groundTexture);
     groundSprite.setTexture(textureManager.getTexture("GROUND"));
     groundSprite.setTextureRect(IntRect(0, 0, WIN_WIDTH, GROUND_HEIGHT));
     groundSprite.setPosition(0.f, WIN_HEIGHT - GROUND_HEIGHT);
@@ -71,13 +63,12 @@ void Game::loadTextures()
     backgroundSprite.setTexture(textureManager.getTexture("BACKGROUND"));
     backgroundSprite.setScale(BG_SCALE_W, BG_SCALE_H);
     backgroundSprite.setPosition(0.0f, 0.0f);
-    */
-
-    
+    */  
 }
 
 void Game::initSprites()
 {
+    textureManager.getTexture("GROUND").setRepeated(true);
     groundSprite.setTexture(textureManager.getTexture("GROUND"));
     groundSprite.setTextureRect(IntRect(0, 0, WIN_WIDTH, GROUND_HEIGHT));
     groundSprite.setPosition(0.f, WIN_HEIGHT - GROUND_HEIGHT);
@@ -89,7 +80,7 @@ void Game::initSprites()
 
 void Game::initVariables()
 {
-    //currentMenu = &mainMenu;
+    currentMenu = nullptr;//&mainMenu;
 
     pipeSpawnTimer = Time::Zero;
     pipeSpawnInterval = seconds(3.f);
@@ -102,7 +93,26 @@ void Game::initVariables()
 
 bool Game::texturesLoaded()
 {
-    return false;
+    return textureManager.isLoaded("BACKGROUND") &&
+        textureManager.isLoaded("GROUND") &&
+        textureManager.isLoaded("BIRD1") &&
+        textureManager.isLoaded("BIRD2") &&
+        textureManager.isLoaded("BIRD3") &&
+        textureManager.isLoaded("PIPE_BOTTOM") &&
+        textureManager.isLoaded("PIPE_TOP") &&
+        textureManager.isLoaded("PLAY") &&
+        textureManager.isLoaded("PLAY_HV") &&
+        textureManager.isLoaded("PAUSE") &&
+        textureManager.isLoaded("PAUSE_HV") &&
+        textureManager.isLoaded("RESUME") &&
+        textureManager.isLoaded("RESUME_HV") &&
+        textureManager.isLoaded("MENU") &&
+        textureManager.isLoaded("MENU_HV") &&
+        textureManager.isLoaded("OK") &&
+        textureManager.isLoaded("OK_HV") &&
+        textureManager.isLoaded("INVINC") &&
+        textureManager.isLoaded("GAMEOVER") &&
+        textureManager.isLoaded("FLAPPYBIRD");       
 }
 
 void Game::initText()
@@ -143,7 +153,7 @@ Game::Game(): window(nullptr), score(0), currentState(GameState::LOADING), textu
 	initWindow();
     initText();
     loadTextures();    
-    initVariables();     
+    initVariables();    
 }
 
 Game& Game::getInstance()
@@ -270,7 +280,9 @@ void Game::update(Time& dt)
     pollEvents();   
     handleStates();
 
-    currentMenu->update(window);
+    if(currentMenu)
+        currentMenu->update(window);
+
     switch (currentState) 
     {
     case GameState::LOADING :
@@ -417,7 +429,6 @@ void Game::render()
         renderPipes();       
         break;
     case GameState::GAME_OVER:
-        // stany PLAYING, PAUSE I GAME_OVER maja taka sama sekwnecje renderowania, wiec kod w switchu zostaje pusty bez break;
         bird.render(window);
         renderPipes();
         renderScore();
@@ -426,7 +437,9 @@ void Game::render()
     if (currentState != GameState::LOADING)
         window->draw(groundSprite);
     //kazdy stan dokonuje renderu
-    currentMenu->render(window);
+    if(currentMenu)
+        currentMenu->render(window);
+
     window->display();
 }
 

@@ -136,7 +136,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Bird.cpp" />
-    <ClCompile Include="Button.cpp" />
     <ClCompile Include="FLAPPY_BIRD.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameOverMenu.cpp" />
@@ -154,7 +153,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bird.h" />
-    <ClInclude Include="Button.h" />
     <ClInclude Include="Definitions.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameOverMenu.h" />

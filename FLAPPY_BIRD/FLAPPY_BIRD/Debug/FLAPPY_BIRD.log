@@ -1,3 +1,3 @@
 ﻿  Game.cpp
-C:\Users\igor\Desktop\PROJEKT_PK4\FLAPPY_BIRD\Game.cpp(304,20): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\igor\Desktop\PROJEKT_PK4\FLAPPY_BIRD\Game.cpp(385,20): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
   FLAPPY_BIRD.vcxproj -> C:\Users\igor\Desktop\PROJEKT_PK4\FLAPPY_BIRD\Debug\FLAPPY_BIRD.exe

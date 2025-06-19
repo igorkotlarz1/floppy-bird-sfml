@@ -13,7 +13,6 @@
 #include "PipeFactory.h"
 #include "Invincibility.h"
 #include "Definitions.h"
-#include "Button.h"
 #include "GameState.h"
 
 //interfejsy GUI

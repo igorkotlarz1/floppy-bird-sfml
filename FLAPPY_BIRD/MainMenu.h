@@ -6,7 +6,7 @@
 class MainMenu : public Menu
 {
 private:
-	UIButton startButton, scoreButton;
+	UIButton startButton;
 	Texture flappyBirdTexture;
 	Sprite flappyBirdSprite;
 
