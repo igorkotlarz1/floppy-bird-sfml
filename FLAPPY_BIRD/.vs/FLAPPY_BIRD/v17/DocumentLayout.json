@@ -3,80 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Definitions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:Definitions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Bird.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:Bird.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PauseMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:PauseMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PauseMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:PauseMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\UIButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:UIButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Pipe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:Pipe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\MainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:MainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\MainMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:MainMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PowerUp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:PowerUp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PowerUp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:PowerUp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Invincibility.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:Invincibility.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\GamePlayMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:GamePlayMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Bird.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:Bird.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\UIButton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:UIButton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PipeFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:PipeFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Invincibility.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:Invincibility.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PathValidator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:PathValidator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\FLAPPY_BIRD.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:FLAPPY_BIRD.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PathValidator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:PathValidator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A354D2B0-EE57-48DB-BB01-01AA2ACE985F}|FLAPPY_BIRD.vcxproj|solutionrelative:Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Game.cpp",
               "RelativeDocumentMoniker": "Game.cpp",
               "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Game.cpp",
               "RelativeToolTip": "Game.cpp",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAAADUAAAAAAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAACwAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-02T20:17:05.48Z",
               "IsPinned": true,
@@ -104,7 +48,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
               "Title": "Game.h",
               "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Game.h",
               "RelativeDocumentMoniker": "Game.h",
@@ -113,228 +57,46 @@
               "ViewState": "AQIAADkAAAAAAAAAAAAAAEAAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-02T20:14:30.591Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PauseMenu.cpp",
-              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PauseMenu.cpp",
-              "RelativeDocumentMoniker": "PauseMenu.cpp",
-              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PauseMenu.cpp",
-              "RelativeToolTip": "PauseMenu.cpp",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAABAAAA",
+              "DocumentIndex": 0,
+              "Title": "PathValidator.cpp",
+              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PathValidator.cpp",
+              "RelativeDocumentMoniker": "PathValidator.cpp",
+              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PathValidator.cpp",
+              "RelativeToolTip": "PathValidator.cpp",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-19T12:38:06.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Pipe.h",
-              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Pipe.h",
-              "RelativeDocumentMoniker": "Pipe.h",
-              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Pipe.h",
-              "RelativeToolTip": "Pipe.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-19T12:35:32.983Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainMenu.cpp",
-              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\MainMenu.cpp",
-              "RelativeDocumentMoniker": "MainMenu.cpp",
-              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\MainMenu.cpp",
-              "RelativeToolTip": "MainMenu.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-19T12:35:03.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PowerUp.cpp",
-              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PowerUp.cpp",
-              "RelativeDocumentMoniker": "PowerUp.cpp",
-              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PowerUp.cpp",
-              "RelativeToolTip": "PowerUp.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-19T12:34:05.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GamePlayMenu.h",
-              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\GamePlayMenu.h",
-              "RelativeDocumentMoniker": "GamePlayMenu.h",
-              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\GamePlayMenu.h",
-              "RelativeToolTip": "GamePlayMenu.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-19T12:33:28.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UIButton.cpp",
-              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\UIButton.cpp",
-              "RelativeDocumentMoniker": "UIButton.cpp",
-              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\UIButton.cpp",
-              "RelativeToolTip": "UIButton.cpp",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-19T12:30:50.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UIButton.h",
-              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\UIButton.h",
-              "RelativeDocumentMoniker": "UIButton.h",
-              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\UIButton.h",
-              "RelativeToolTip": "UIButton.h",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-19T12:08:47.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PauseMenu.h",
-              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PauseMenu.h",
-              "RelativeDocumentMoniker": "PauseMenu.h",
-              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PauseMenu.h",
-              "RelativeToolTip": "PauseMenu.h",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-19T12:08:25.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MainMenu.h",
-              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\MainMenu.h",
-              "RelativeDocumentMoniker": "MainMenu.h",
-              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\MainMenu.h",
-              "RelativeToolTip": "MainMenu.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-19T12:08:08.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PowerUp.h",
-              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PowerUp.h",
-              "RelativeDocumentMoniker": "PowerUp.h",
-              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PowerUp.h",
-              "RelativeToolTip": "PowerUp.h",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-19T12:04:50.974Z",
+              "WhenOpened": "2025-06-19T13:19:46.954Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Bird.cpp",
-              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Bird.cpp",
-              "RelativeDocumentMoniker": "Bird.cpp",
-              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Bird.cpp",
-              "RelativeToolTip": "Bird.cpp",
-              "ViewState": "AQIAADEAAAAAAAAAAAAAACkAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-08T20:03:46.182Z",
+              "Title": "PathValidator.h",
+              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PathValidator.h",
+              "RelativeDocumentMoniker": "PathValidator.h",
+              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PathValidator.h",
+              "RelativeToolTip": "PathValidator.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-19T13:17:35.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Definitions.h",
-              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Definitions.h",
-              "RelativeDocumentMoniker": "Definitions.h",
-              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Definitions.h",
-              "RelativeToolTip": "Definitions.h",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACUAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-19T11:50:24.609Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PipeFactory.h",
-              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PipeFactory.h",
-              "RelativeDocumentMoniker": "PipeFactory.h",
-              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\PipeFactory.h",
-              "RelativeToolTip": "PipeFactory.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-19T12:08:40.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Invincibility.h",
-              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Invincibility.h",
-              "RelativeDocumentMoniker": "Invincibility.h",
-              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Invincibility.h",
-              "RelativeToolTip": "Invincibility.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-19T12:01:28.249Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Bird.h",
-              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Bird.h",
-              "RelativeDocumentMoniker": "Bird.h",
-              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Bird.h",
-              "RelativeToolTip": "Bird.h",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAADEAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-19T11:33:47.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Invincibility.cpp",
-              "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Invincibility.cpp",
-              "RelativeDocumentMoniker": "Invincibility.cpp",
-              "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\Invincibility.cpp",
-              "RelativeToolTip": "Invincibility.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-19T12:01:31.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "FLAPPY_BIRD.cpp",
               "DocumentMoniker": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\FLAPPY_BIRD.cpp",
               "RelativeDocumentMoniker": "FLAPPY_BIRD.cpp",
               "ToolTip": "C:\\Users\\igor\\Desktop\\PROJEKT_PK4\\FLAPPY_BIRD\\FLAPPY_BIRD.cpp",
               "RelativeToolTip": "FLAPPY_BIRD.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-02T19:41:14.57Z"
+              "WhenOpened": "2025-04-02T19:41:14.57Z",
+              "EditorCaption": ""
             }
           ]
         }

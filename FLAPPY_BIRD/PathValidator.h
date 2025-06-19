@@ -6,6 +6,7 @@
 #include <filesystem>
 #include <regex>
 #include <unordered_map>
+
 #include "Definitions.h"
 
 namespace fs = std::filesystem;
@@ -19,7 +20,7 @@ enum class FileType
 class PathValidator
 {
 private:
-	static const std::unordered_map<FileType, std::vector<std::string>> validExtensions;
+	static const std::unordered_map<FileType, std::regex> validExtensions;
 public:
 	static bool validate(const std::string& path, FileType fileType);
 };
