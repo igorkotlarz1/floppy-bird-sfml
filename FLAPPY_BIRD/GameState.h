@@ -10,11 +10,4 @@ enum class GameState
     GAME_OVER
 };
 
-enum class Difficulty
-{
-    EASY = 0,
-    MEDIUM,
-    HARD
-};
-
 #endif

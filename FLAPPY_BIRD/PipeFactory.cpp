@@ -16,22 +16,8 @@ PipeFactory::PipeFactory(TextureManager& manager) : textureManager(manager), mov
     baseSpeed = PIPE_SPEED;
 }
 
-std::unique_ptr<Pipe> PipeFactory::createPipe(unsigned int score, Difficulty diff)
+std::unique_ptr<Pipe> PipeFactory::createPipe(unsigned int score) 
 {
-    switch (diff)
-    {
-    case Difficulty::EASY:
-        break;
-    case Difficulty::MEDIUM:
-        baseSpeed *= 1.2f;
-        baseDistance -= 25;
-        break;
-    case Difficulty::HARD:
-        baseSpeed *= 1.5f;
-        baseDistance -= 50;
-        break;
-    }
-
     float speed = baseSpeed + (score / 10) * 10; 
     float distance = baseDistance - (score / 10) * 10;
 

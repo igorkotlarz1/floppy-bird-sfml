@@ -33,7 +33,6 @@ private:
 
 	//Stan gry
 	GameState currentState;
-	Difficulty difficulty;
 
 	//Zarzadzanie menu
 	Menu* currentMenu;

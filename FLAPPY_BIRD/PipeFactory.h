@@ -14,7 +14,7 @@ class PipeFactory
 private:
 	TextureManager& textureManager;
 
-	//bazowe parametry ustalane przez game
+	//bazowe parametry rur
 	float baseSpeed, baseDistance;
 	float movingPipeSpeed, movingPipeRange; //dodatkowe parametry ruchomych rur
 
@@ -24,7 +24,7 @@ public:
 
 	PipeFactory(TextureManager& manager);
 
-	std::unique_ptr<Pipe> createPipe(unsigned int score, Difficulty diff);
+	std::unique_ptr<Pipe> createPipe(unsigned int score);
 	static int randomIntGenerator(const int& min, const int& max); 
 };
 

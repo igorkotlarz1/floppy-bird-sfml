@@ -100,8 +100,6 @@ void Game::initVariables()
 
     pupSpawnTimer = Time::Zero;
     pupSpawnInterval = seconds(20.f);
-
-    difficulty = Difficulty::EASY;
 }
 
 bool Game::texturesLoaded()
@@ -220,7 +218,7 @@ void Game::spawnPipes(Time& dt)
     if (pipeSpawnTimer >= pipeSpawnInterval)
     {        
         //zastosowanie wzorca fabryki obiektow
-        pipes.push_back(pipeFactory.createPipe(score, difficulty));
+        pipes.push_back(pipeFactory.createPipe(score)); 
         pipeSpawnTimer = Time::Zero;
     }
 }
