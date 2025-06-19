@@ -3,12 +3,15 @@
 
 #include "Definitions.h"
 #include "Bird.h"
+#include "TextureManager.h"
 
 class PowerUp
 {
 protected:
+	TextureManager& textureManager;
+
 	Sprite sprite;
-	Texture texture;
+	//Texture texture;
 
 	bool active, movingUp;
 	float duration, elapsedTime;
@@ -17,7 +20,9 @@ protected:
 	void animate(Time& dt);
 
 public:
-	PowerUp(const Vector2f& position);
+
+	PowerUp(TextureManager& manager, const Vector2f& position);
+
 	virtual void update(Time& dt);
 	virtual void render(RenderWindow* window);
 
@@ -30,7 +35,6 @@ public:
 	virtual ~PowerUp() = default;	
 
 	bool isOutside() const;
-
 };
 
 

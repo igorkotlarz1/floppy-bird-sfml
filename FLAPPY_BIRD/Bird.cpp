@@ -1,17 +1,17 @@
 #include "Bird.h"
 
-Bird::Bird() : flapSpeed(400.f), gravity(20.f), velocity(0.f), shouldFlap(true), animationSpeed(0.2f), 
+Bird::Bird(TextureManager& manager) : textureManager(manager), flapSpeed(400.f), gravity(20.f), velocity(0.f), shouldFlap(true), animationSpeed(0.2f),
 	currentFrame(0), maxUpRot(-25.f), maxDownRot(50.f), rotationSpeed(200.f), invincible(false)
 {
-	initTextures();
-	initBird();
+	texturesID = { "BIRD1", "BIRD2", "BIRD3" };	
+	
 }
 
 Bird::~Bird()
 {
 }
 
-void Bird::initTextures()
+/*void Bird::initTextures()
 {
 	Texture texture1, texture2, texture3;
 	texture1.loadFromFile(BIRD_PATH_1);
@@ -24,10 +24,11 @@ void Bird::initTextures()
 
 	birdSprite.setTexture(Textures[0]);
 	birdSprite.setScale(BIRD_SCALE, BIRD_SCALE); 
-}
+}*/
 
 void Bird::initBird()
 {
+	birdSprite.setScale(BIRD_SCALE, BIRD_SCALE);
 	birdSprite.setPosition(WIN_WIDTH/4, WIN_HEIGHT*0.33);
 	birdSprite.setOrigin(birdSprite.getLocalBounds().width / 2.f, birdSprite.getLocalBounds().height / 2.f); 
 	birdSprite.setRotation(0.f);
@@ -40,8 +41,8 @@ void Bird::animate()
 		currentFrame++;
 		if (currentFrame >= 3)
 			currentFrame = 0;
-
-		birdSprite.setTexture(Textures[currentFrame]);
+		//birdSprite.setTexture(Textures[currentFrame]);
+		birdSprite.setTexture(textureManager.getTexture(texturesID[currentFrame]));
 		animationClock.restart();
 	}
 }
@@ -71,6 +72,12 @@ void Bird::flap(Time& dt)
 {
 	velocity = -flapSpeed * dt.asSeconds();
 	rotation = maxUpRot;
+}
+
+void Bird::init()
+{
+	birdSprite.setTexture(textureManager.getTexture("BIRD1")); 
+	initBird();
 }
 
 void Bird::update(Time& dt)
@@ -147,7 +154,8 @@ void Bird::reset()
 	velocity = 0.f;
 
 	currentFrame = 0;
-	birdSprite.setTexture(Textures[0]);
+	//birdSprite.setTexture(Textures[0]);
+	birdSprite.setTexture(textureManager.getTexture(texturesID[0]));
 	animationClock.restart();
 
 	birdSprite.setRotation(0.f);

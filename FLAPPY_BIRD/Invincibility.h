@@ -9,7 +9,7 @@ private:
 	void initTextures();
 
 public:
-	Invincibility(const Vector2f& position);
+	Invincibility(TextureManager& manager, const Vector2f& position);
 
 	void apply(Bird& bird) override;
 

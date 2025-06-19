@@ -21,7 +21,7 @@ void PowerUp::animate(Time& dt)
 	}
 }
 
-PowerUp::PowerUp(const Vector2f& position) :  active(false), movingUp(true), duration(7.f), elapsedTime(0.f), moveRange(20), moveSpeed(50.f)
+PowerUp::PowerUp(TextureManager& manager, const Vector2f& position) :  textureManager(manager), active(false), movingUp(true), duration(7.f), elapsedTime(0.f), moveRange(20), moveSpeed(50.f)
 {
 	sprite.setPosition(position);
 	startY = position.y;

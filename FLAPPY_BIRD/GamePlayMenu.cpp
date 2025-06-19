@@ -2,27 +2,28 @@
 
 void GamePlayMenu::initTextures()
 {
-	pauseButton.initButton(PAUSE_PATH, PAUSE_PATH_HOVER,{ 0.f, 0.f });
+	pauseButton.initButton("PAUSE", "PAUSE_HV");
 }
 
 void GamePlayMenu::adjustButtons()
 {
-	pauseButton.setScale(PAUSE_SCALE, PAUSE_SCALE); //4.f
+	pauseButton.setScale(PAUSE_SCALE, PAUSE_SCALE); 
 
-	//Odleglosci od lewej i gornej krawedxi
+	//Odleglosci od lewej i gornej krawedzi
 	const float marginLeft = 30.f;
 	const float marginTop = 30.f;
 	const float spacingY = 120.f;
 
 	//Pozycjonowanie w oparciu o lewy gorny rog
-	//resumeButton.setOrigin(0.f, 0.f); // origin: top-left
 	pauseButton.setPosition(marginLeft, marginTop);
-
-	//menuButton.setOrigin(0.f, 0.f); // origin: top-left
-	//menuButton.setPosition(marginLeft, marginTop + spacingY);
 }
 
-GamePlayMenu::GamePlayMenu()
+GamePlayMenu::GamePlayMenu(TextureManager& manager) : textureManager(manager), pauseButton(manager)
+{
+	
+}
+
+void GamePlayMenu::init()
 {
 	initTextures();
 	adjustButtons();

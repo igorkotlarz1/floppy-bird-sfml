@@ -1,14 +1,10 @@
 #include "UIButton.h"
 
-UIButton::UIButton() : currentState(ButtonState::IDLE), pressedLastFrame(true)
+UIButton::UIButton(TextureManager& manager): textureManager(manager), currentState(ButtonState::IDLE), pressedLastFrame(true)
 {
 }
 
-UIButton::UIButton(TextureManager& manager)
-{
-}
-
-void UIButton::initButton(const std::string& idlePath, const std::string& hoverPath, const Vector2f& pos)
+/*void UIButton::initButton(const std::string& idlePath, const std::string& hoverPath, const Vector2f& pos)
 {
 	if (!idleTexture.loadFromFile(idlePath) || !hoverTexture.loadFromFile(hoverPath))
 		std::cout << "ERROR: failed to load UIButton textures!" << std::endl;
@@ -16,6 +12,14 @@ void UIButton::initButton(const std::string& idlePath, const std::string& hoverP
 	button.setTexture(idleTexture);
 	button.setPosition(pos);
 	position = pos;
+}*/
+
+void UIButton::initButton(const std::string& idleid, const std::string& hoverid)
+{
+	idleID = idleid;
+	hoverID = hoverid;
+
+	button.setTexture(textureManager.getTexture(idleid));
 }
 
 void UIButton::setScale(const float x, const float y)
@@ -46,10 +50,8 @@ void UIButton::update(RenderWindow* window)
 
 	if (button.getGlobalBounds().contains((Vector2f)mouseCords)) //button.getGlobalBounds().contains((Vector2f)mouseCords)
 	{
-		if (pressedNow && !pressedLastFrame) 
-		{
-			currentState = ButtonState::PRESSED;
-		}
+		if (pressedNow && !pressedLastFrame) 		
+			currentState = ButtonState::PRESSED;	
 		else
 			currentState = ButtonState::HOVER;
 	}
@@ -59,13 +61,13 @@ void UIButton::update(RenderWindow* window)
 	switch (currentState)
 	{
 	case ButtonState::IDLE:
-		button.setTexture(idleTexture);
+		button.setTexture(textureManager.getTexture(idleID));
 		break;
 	case ButtonState::HOVER:
-		button.setTexture(hoverTexture);
+		button.setTexture(textureManager.getTexture(hoverID));
 		break;
 	case ButtonState::PRESSED:
-		button.setTexture(hoverTexture);
+		button.setTexture(textureManager.getTexture(hoverID));
 		break;
 	}	
 
@@ -74,7 +76,6 @@ void UIButton::update(RenderWindow* window)
 
 bool UIButton::isPressed() 
 {
-	//return currentState == ButtonState::PRESSED ? true : false;
 	if (currentState == ButtonState::PRESSED)
 	{
 		//eliminacja wielokrotnego klikniecia

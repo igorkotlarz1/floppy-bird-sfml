@@ -66,16 +66,28 @@ void Game::loadTextures()
     */  
 }
 
-void Game::initSprites()
+void Game::initAssets()
 {
+    //Bezpieczna inicjalizacja zasobów jak wszytskie tkestury zostan¹ wczytane
+
     textureManager.getTexture("GROUND").setRepeated(true);
     groundSprite.setTexture(textureManager.getTexture("GROUND"));
+
     groundSprite.setTextureRect(IntRect(0, 0, WIN_WIDTH, GROUND_HEIGHT));
     groundSprite.setPosition(0.f, WIN_HEIGHT - GROUND_HEIGHT);
 
     backgroundSprite.setTexture(textureManager.getTexture("BACKGROUND"));
+
     backgroundSprite.setScale(BG_SCALE_W, BG_SCALE_H);
     backgroundSprite.setPosition(0.0f, 0.0f);
+
+    bird.init();
+    mainMenu.init();
+    playingMenu.init();
+    pauseMenu.init();
+    playingMenu.init();
+    gameOver.init();
+
 }
 
 void Game::initVariables()
@@ -148,12 +160,15 @@ void Game::initText()
 
 }
 
-Game::Game(): window(nullptr), score(0), currentState(GameState::LOADING), textureManager() //pipeFactory(textureManager), bird(textureManager)
+Game::Game(): textureManager(), mainMenu(textureManager), playingMenu(textureManager), pauseMenu(textureManager), gameOver(textureManager),
+bird(textureManager), pipeFactory(textureManager), window(nullptr), score(0), currentState(GameState::LOADING) 
 {
 	initWindow();
-    initText();
-    loadTextures();    
-    initVariables();    
+    initText();    
+    initVariables();   
+
+    //wczytywanie wszystkich tekstur w tle
+    loadTextures();  
 }
 
 Game& Game::getInstance()
@@ -288,7 +303,7 @@ void Game::update(Time& dt)
     case GameState::LOADING :
         if (texturesLoaded())
         {
-            initSprites();
+            initAssets();            
             currentState = GameState::MENU;
         }
         break;
@@ -383,7 +398,7 @@ void Game::spawnPowerUp(Time& dt)
     if (pupSpawnTimer > pupSpawnInterval)
     {
         float posY = PipeFactory::randomIntGenerator(250,550);
-        powerUps.push_back(std::make_unique<Invincibility>(Vector2f(WIN_WIDTH - 50, posY)));
+        powerUps.push_back(std::make_unique<Invincibility>(textureManager, Vector2f(WIN_WIDTH, posY)));
         pupSpawnTimer = Time::Zero;
     }
 }

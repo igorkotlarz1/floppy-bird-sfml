@@ -1,7 +1,7 @@
 #include "MovingPipe.h"
 
-MovingPipe::MovingPipe(const int& distance, const float& speed, const int& randomOffset, float moveSpeed, float moveRange) 
-	: Pipe(distance, speed, randomOffset), moveRange(moveRange), moveSpeed(moveSpeed), movingUp(true)
+MovingPipe::MovingPipe(TextureManager& manager, const int& distance, const float& speed, const int& randomOffset, float moveSpeed, float moveRange)
+	: Pipe(manager, distance, speed, randomOffset), moveRange(moveRange), moveSpeed(moveSpeed), movingUp(true)
 {
 	startY = pipeBottomSprite.getPosition().y;
 }
@@ -36,5 +36,4 @@ void MovingPipe::update(Time& dt)
 		if (pipeBottomSprite.getPosition().y > startY + moveRange) // dolna granica ruchu wzgledem startu
 			movingUp = true;
 	}
-
 }

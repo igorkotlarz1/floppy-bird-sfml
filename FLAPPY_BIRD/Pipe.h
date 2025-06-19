@@ -2,11 +2,15 @@
 #define PIPE_H
 
 #include "Definitions.h"
+#include "TextureManager.h"
 
 class Pipe
 {
 protected:
-	Texture pipeBottomTexture, pipeTopTexture;
+	TextureManager& textureManager;
+
+	//Texture pipeBottomTexture, pipeTopTexture;
+
 	Sprite pipeBottomSprite, pipeTopSprite;
 
 	int pipeDistance;
@@ -19,8 +23,7 @@ protected:
 
 public:
 
-	Pipe(const int& distance, const float& speed, const int& randomOffset);
-	Pipe();
+	Pipe(TextureManager& manager, const int& distance, const float& speed, const int& randomOffset);
 	
 	virtual ~Pipe();
 
@@ -36,7 +39,6 @@ public:
 
 	FloatRect getBottomBounds() const;
 	FloatRect getTopBounds() const;
-
 
 	float getRightEdge();
 	bool isPassed() const;

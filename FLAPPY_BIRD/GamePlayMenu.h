@@ -6,6 +6,8 @@
 class GamePlayMenu : public Menu
 {
 private:
+	TextureManager& textureManager;
+
 	UIButton pauseButton;
 	Text scoreText;
 
@@ -13,8 +15,8 @@ private:
 	void adjustButtons();
 
 public:
-	GamePlayMenu();
-
+	GamePlayMenu(TextureManager& manager);
+	void init();
 	void update(RenderWindow* window) override;
 	void render(RenderWindow* window) override;
 

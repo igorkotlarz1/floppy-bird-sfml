@@ -6,20 +6,25 @@
 class MainMenu : public Menu
 {
 private:
+
+	TextureManager& textureManager;
+
 	UIButton startButton;
-	Texture flappyBirdTexture;
+
+	//Texture flappyBirdTexture;
 	Sprite flappyBirdSprite;
 
 	void initTextures();
 	void adjustButtons();
 
 public:
-	MainMenu();
+	MainMenu(TextureManager& manager);
+	void init();
+
 	void update(RenderWindow* window) override;
 	void render(RenderWindow* window) override;
 
 	bool start();
-	bool exit();
 };
 
 #endif 

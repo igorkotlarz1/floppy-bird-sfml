@@ -1,14 +1,9 @@
 #include "Pipe.h"
 
-
-
 void Pipe::initTextures()
 {
-	if (!pipeBottomTexture.loadFromFile(R"(Textures\pipes\pipe_up.png)") || !pipeTopTexture.loadFromFile(R"(Textures\pipes\pipe_down.png)"))
-		std::cout << "ERROR: Loading pipes texture!\n";
-
-	pipeTopSprite.setTexture(pipeTopTexture);
-	pipeBottomSprite.setTexture(pipeBottomTexture);
+	pipeTopSprite.setTexture(textureManager.getTexture("PIPE_TOP"));
+	pipeBottomSprite.setTexture(textureManager.getTexture("PIPE_BOTTOM"));
 
 	pipeTopSprite.setScale(PIPE_SCALE, PIPE_SCALE);
 	pipeBottomSprite.setScale(PIPE_SCALE, PIPE_SCALE);
@@ -18,27 +13,19 @@ void Pipe::initPipe(const float& randomOffset)
 {
 	pipeBottomSprite.setPosition(WIN_WIDTH, randomOffset);
 	pipeTopSprite.setPosition(WIN_WIDTH, randomOffset - pipeDistance - PIPE_SCALE * PIPE_HEIGHT);
-
-	//wersja dzialajaca
-	/*float gapCenterY = randomOffset;
-
-	float topPos = gapCenterY - (pipeDistance / 2) - 1.5*PIPE_HEIGHT;
-	float bottomPos = gapCenterY + (pipeDistance / 2);
-
-	pipeTopSprite.setPosition(WIN_WIDTH, topPos);
-	pipeBottomSprite.setPosition(WIN_WIDTH, bottomPos);*/
 }
 
-Pipe::Pipe(const int& distance, const float& speed, const int& randomOffset) : pipeDistance(distance), pipeSpeed(speed), passed(false)
+/*Pipe::Pipe(const int& distance, const float& speed, const int& randomOffset) : pipeDistance(distance), pipeSpeed(speed), passed(false)
 {
 	initTextures();
 	initPipe(randomOffset);
-}
+}*/
 
-Pipe::Pipe() : pipeDistance(200), pipeSpeed(200)
+Pipe::Pipe(TextureManager& manager, const int& distance, const float& speed, const int& randomOffset) : 
+	textureManager(manager), pipeDistance(distance), pipeSpeed(speed), passed(false)
 {
 	initTextures();
-	initPipe(0.f);
+	initPipe(randomOffset);
 }
 
 Pipe::~Pipe()

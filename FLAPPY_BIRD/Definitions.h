@@ -32,7 +32,7 @@ using namespace sf;
 #define BIRD_PATH_3 R"(Textures\bird_2\upflap.png)"
 
 #define PIPE_BOTTOM_PATH R"(Textures\pipes\pipe_up.png)"
-#define PIPE_TOP_PATH R"(Textures\pipes\pipe_up.png)"
+#define PIPE_TOP_PATH R"(Textures\pipes\pipe_down.png)"
 
 #define BG_PATH R"(Textures\backgrounds\piwko1.jpg)"
 #define GROUND_PATH R"(Textures\ground\base.png)"

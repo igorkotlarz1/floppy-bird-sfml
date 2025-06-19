@@ -3,14 +3,18 @@
 
 #include "Definitions.h"
 #include <vector>
+#include "TextureManager.h"
 
 using namespace sf;
 
 class Bird
 {
 private:
-	//Tekstury
-	std::vector<Texture> Textures;
+	//tekstury
+	TextureManager& textureManager;
+	//std::vector<Texture> Textures;
+
+	std::vector<std::string> texturesID;
 	Sprite birdSprite;
 
 	//Animacja ptaka
@@ -30,7 +34,6 @@ private:
 	float pupDuration;
 	Clock pupTimer;
 
-	void initTextures();
 	void initBird();
 
 	void animate();
@@ -40,9 +43,11 @@ private:
 	void updatePUP();
 
 public:
-	Bird();
+	Bird(TextureManager& manager);
+
 	~Bird();
 
+	void init();
 	void update(Time& dt); 
 
 	void render(RenderWindow* window);

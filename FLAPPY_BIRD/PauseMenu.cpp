@@ -2,13 +2,13 @@
 
 void PauseMenu::initTextures()
 {
-	resumeButton.initButton(RESUME_PATH, RESUME_PATH_HOVER, { 0.f, 0.f });
-	menuButton.initButton(MENU_PATH, MENU_PATH_HOVER,{ 0.f, 0.f });
+	resumeButton.initButton("RESUME", "RESUME_HV");
+	menuButton.initButton("MENU", "MENU_HV");
 }
 
 void PauseMenu::adjustButtons()
 {
-	resumeButton.setScale(PAUSE_SCALE, PAUSE_SCALE); //4.f
+	resumeButton.setScale(PAUSE_SCALE, PAUSE_SCALE); 
 	menuButton.setScale(PAUSE_SCALE, PAUSE_SCALE);
 
 	// Odleg³oœci od górnej i lewej krawêdzi
@@ -17,14 +17,17 @@ void PauseMenu::adjustButtons()
 	const float distance = 60.f;
 
 	// Pozycjonowanie w oparciu o lewy górny róg
-	//resumeButton.setOrigin(0.f, 0.f); // origin: top-left
 	resumeButton.setPosition(marginLeft, marginTop);
 
-	//menuButton.setOrigin(0.f, 0.f); // origin: top-left
 	menuButton.setPosition(marginLeft + distance, marginTop );
 }
 
-PauseMenu::PauseMenu()
+PauseMenu::PauseMenu(TextureManager& manager) : textureManager(manager), resumeButton(manager), menuButton(manager)
+{
+	
+}
+
+void PauseMenu::init()
 {
 	initTextures();
 	adjustButtons();

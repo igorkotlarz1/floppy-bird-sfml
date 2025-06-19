@@ -9,14 +9,14 @@ private:
 	bool movingUp;
 	float moveRange, moveSpeed, startY;
 public:
-	MovingPipe(const int& distance, const float& speed, const int& randomOffset,
+	MovingPipe(TextureManager& manager, const int& distance, const float& speed, const int& randomOffset,
 		float moveSpeed, float moveRange);
 	~MovingPipe();
 
 	void update(Time& dt) override;
 };
 
-#endif // !MOVINGPIPE_H
+#endif 
 
 
 

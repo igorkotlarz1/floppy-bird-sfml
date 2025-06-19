@@ -6,14 +6,21 @@
 class PauseMenu : public Menu
 {
 private:
+
+	TextureManager& textureManager;
+
 	UIButton resumeButton, menuButton;
+
 	Texture gameOverTexture;
 	Sprite gameOverSprite;
 
 	void initTextures();
 	void adjustButtons();
+
 public:
-	PauseMenu();
+	PauseMenu(TextureManager& manager);
+	void init();
+
 	void update(RenderWindow* window) override;
 	void render(RenderWindow* window) override;
 

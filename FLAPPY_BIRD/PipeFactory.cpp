@@ -1,6 +1,5 @@
 #include "PipeFactory.h"
 
-//inicjalizacja zmiennej do sledzenia 
 int PipeFactory::nextMovingPipeScore = PipeFactory::randomIntGenerator(1, 7);
 
 int PipeFactory::randomIntGenerator(const int& min, const int& max)
@@ -11,7 +10,7 @@ int PipeFactory::randomIntGenerator(const int& min, const int& max)
     return dist(rd);
 }
 
-PipeFactory::PipeFactory() : movingPipeSpeed(50.f), movingPipeRange(100)
+PipeFactory::PipeFactory(TextureManager& manager) : textureManager(manager), movingPipeSpeed(50.f), movingPipeRange(100)
 {
     baseDistance = PIPE_DISTANCE;
     baseSpeed = PIPE_SPEED;
@@ -32,8 +31,6 @@ std::unique_ptr<Pipe> PipeFactory::createPipe(unsigned int score, Difficulty dif
         baseDistance -= 50;
         break;
     }
-    //dzielenie calkowite -> co 10 pkt predkosc rosnie o 10
-    //                       co 10 pkt dystans maleje o 10
 
     float speed = baseSpeed + (score / 10) * 10; 
     float distance = baseDistance - (score / 10) * 10;
@@ -46,8 +43,8 @@ std::unique_ptr<Pipe> PipeFactory::createPipe(unsigned int score, Difficulty dif
     if (score >= nextMovingPipeScore)
     {
         nextMovingPipeScore = score + randomIntGenerator(1, 7);
-        return std::make_unique<MovingPipe>(distance, speed, offset, movingSpeed, movingRange);
+        return std::make_unique<MovingPipe>(textureManager, distance, speed, offset, movingSpeed, movingRange);
     }
 
-    return std::make_unique<Pipe>(distance, speed, offset);
+    return std::make_unique<Pipe>(textureManager, distance, speed, offset);
 }

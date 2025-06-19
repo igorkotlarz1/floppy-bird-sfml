@@ -28,6 +28,9 @@
 class Game
 {
 private:
+	//Manager tekstur
+	TextureManager textureManager;
+
 	//Stan gry
 	GameState currentState;
 	Difficulty difficulty;
@@ -57,13 +60,10 @@ private:
 	float movingPipeSpeed, movingPipeRange;
 
 	Time pipeSpawnTimer, pipeSpawnInterval;
-
 	Time pupSpawnTimer, pupSpawnInterval;
-	
-	//Textury
-	TextureManager textureManager;
 
-	Texture backgroundTexture, groundTexture;
+	//Textury
+	//Texture backgroundTexture, groundTexture;
 	Sprite backgroundSprite, groundSprite;
 
 	//Tekst
@@ -77,7 +77,7 @@ private:
 	void initWindow();
 	void initText();
 	void loadTextures();
-	void initSprites();
+	void initAssets();
 	void initVariables();
 
 	bool texturesLoaded();
