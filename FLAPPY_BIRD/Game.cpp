@@ -1,4 +1,5 @@
 #include "Game.h"
+#include "PathValidator.h"
 
 void Game::initWindow()
 {
@@ -98,7 +99,7 @@ void Game::initVariables()
     pipeSpawnInterval = seconds(3.f);
 
     pupSpawnTimer = Time::Zero;
-    pupSpawnInterval = seconds(5.f);
+    pupSpawnInterval = seconds(20.f);
 
     difficulty = Difficulty::EASY;
 }
@@ -129,8 +130,11 @@ bool Game::texturesLoaded()
 
 void Game::initText()
 {
-    if (!font.loadFromFile(FONT_SCORE))
-        std::cout << "Unable to load SCORE FONT!" << std::endl;
+    if(PathValidator::validate(FONT_SCORE, FileType::FONT))
+    {
+        if (!font.loadFromFile(FONT_SCORE))
+            std::cout << "Unable to load SCORE FONT after path validation!" << std::endl;
+    }
 
     loadingText.setFont(font);
     loadingText.setString("Loading...");
@@ -139,7 +143,7 @@ void Game::initText()
     loadingText.setOutlineColor(Color::Black);
     loadingText.setOutlineThickness(4.f);
 
-    //Centrowanie napisu Loading...
+    //Centrowanie napisu loading
     auto textBounds = loadingText.getLocalBounds();
     loadingText.setOrigin(textBounds.left + textBounds.width / 2.f, textBounds.top + textBounds.height / 2.f);
     loadingText.setPosition(WIN_WIDTH / 2.f, WIN_HEIGHT / 2.f);

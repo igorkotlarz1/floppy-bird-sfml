@@ -1,5 +1,4 @@
 #ifndef TEXTUREMANAGER_H
-
 #define TEXTUREMANAGER_H
 
 #include "Definitions.h"
@@ -27,7 +26,7 @@ public:
 };
 
 
-#endif // !TEXTUREMANAGER_H
+#endif 
 
 
 

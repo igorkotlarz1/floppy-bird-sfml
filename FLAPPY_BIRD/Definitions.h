@@ -50,9 +50,6 @@ using namespace sf;
 #define MENU_PATH R"(Textures\buttons\menu.png)"
 #define MENU_PATH_HOVER R"(Textures\buttons\menu_hover.png)"
 
-//#define SCORE_PATH R"(Textures\buttons\score_normal.png)"
-//#define SCORE_PATH_HOVER R"(Textures\buttons\score_pressed.png)"
-
 #define OK_PATH R"(Textures\buttons\ok.png)"
 #define OK_PATH_HOVER R"(Textures\buttons\ok_hover.png)"
 
@@ -63,7 +60,6 @@ using namespace sf;
 #define FONT_SCORE_2 R"(Fonts\Press_Start_2P\PressStart2P-Regular.ttf)"
 
 #define INVINC_PATH R"(Textures\others\medal_gold.png)"
-#define SLOWMO_PATH R"(Textures\others\medal_silver.png)"
 
 #define PUP_SCALE 3.f
 
